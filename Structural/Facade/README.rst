@@ -41,15 +41,15 @@ Facade.php
    :language: php
    :linenos:
 
-OsInterface.php
+OperatingSystem.php
 
-.. literalinclude:: OsInterface.php
+.. literalinclude:: OperatingSystem.php
    :language: php
    :linenos:
 
-BiosInterface.php
+Bios.php
 
-.. literalinclude:: BiosInterface.php
+.. literalinclude:: Bios.php
    :language: php
    :linenos:
 
@@ -62,5 +62,5 @@ Tests/FacadeTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Structural/Facade
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Structural/Facade
 .. __: http://en.wikipedia.org/wiki/Facade_pattern

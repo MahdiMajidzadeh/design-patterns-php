@@ -81,17 +81,16 @@ msgstr ""
 
 #: ../../Structural/DependencyInjection/README.rst:32
 msgid ""
-"Symfony and Zend Framework 2 already have containers for DI that create "
+"many frameworks already have containers for DI that create "
 "objects via a configuration array and inject them where needed (i.e. in "
 "Controllers)"
 msgstr ""
-"Symfony и Zend Framework 2 уже содержат контейнеры для DI, которые "
-"создают объекты с помощью массива из конфигурации, и внедряют их в случае "
-"необходимости (т.е. в Контроллерах)."
+"Во многих фреймворках уже имеются контейнеры для DI, которые создают "
+"объекты через массив с конфигурацией и внедряют туда, где это нужно (например в Контроллеры)."
 
 #: ../../Structural/DependencyInjection/README.rst:37
 msgid "UML Diagram"
-msgstr "UML Диаграмма"
+msgstr "Диаграмма UML"
 
 #: ../../Structural/DependencyInjection/README.rst:44
 msgid "Code"

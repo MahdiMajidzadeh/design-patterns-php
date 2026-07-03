@@ -1,27 +1,32 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\AbstractFactory\Tests;
 
-use DesignPatterns\Creational\AbstractFactory\CsvParser;
-use DesignPatterns\Creational\AbstractFactory\JsonParser;
-use DesignPatterns\Creational\AbstractFactory\ParserFactory;
+use DesignPatterns\Creational\AbstractFactory\CsvWriter;
+use DesignPatterns\Creational\AbstractFactory\JsonWriter;
+use DesignPatterns\Creational\AbstractFactory\UnixWriterFactory;
+use DesignPatterns\Creational\AbstractFactory\WinWriterFactory;
+use DesignPatterns\Creational\AbstractFactory\WriterFactory;
 use PHPUnit\Framework\TestCase;
 
 class AbstractFactoryTest extends TestCase
 {
-    public function testCanCreateCsvParser()
+    public function provideFactory()
     {
-        $factory = new ParserFactory();
-        $parser = $factory->createCsvParser(CsvParser::OPTION_CONTAINS_HEADER);
-
-        $this->assertInstanceOf(CsvParser::class, $parser);
+        return [
+            [new UnixWriterFactory()],
+            [new WinWriterFactory()]
+        ];
     }
 
-    public function testCanCreateJsonParser()
+    /**
+     * @dataProvider provideFactory
+     */
+    public function testCanCreateCsvWriterOnUnix(WriterFactory $writerFactory)
     {
-        $factory = new ParserFactory();
-        $parser = $factory->createJsonParser();
-
-        $this->assertInstanceOf(JsonParser::class, $parser);
+        $this->assertInstanceOf(JsonWriter::class, $writerFactory->createJsonWriter());
+        $this->assertInstanceOf(CsvWriter::class, $writerFactory->createCsvWriter());
     }
 }

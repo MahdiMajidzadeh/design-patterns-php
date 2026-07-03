@@ -20,33 +20,33 @@ Code
 
 You can also find this code on `GitHub`_
 
-OrderContext.php
+ContextOrder.php
 
-.. literalinclude:: OrderContext.php
+.. literalinclude:: ContextOrder.php
    :language: php
    :linenos:
 
-State.php
+StateOrder.php
 
-.. literalinclude:: State.php
+.. literalinclude:: StateOrder.php
    :language: php
    :linenos:
 
-StateCreated.php
+CreateOrder.php
 
-.. literalinclude:: StateCreated.php
+.. literalinclude:: CreateOrder.php
    :language: php
    :linenos:
 
-StateShipped.php
+ShippingOrder.php
 
-.. literalinclude:: StateShipped.php
+.. literalinclude:: ShippingOrder.php
    :language: php
    :linenos:
 
-StateDone.php
+OrderDone.php
 
-.. literalinclude:: StateDone.php
+.. literalinclude:: OrderDone.php
    :language: php
    :linenos:
 
@@ -60,5 +60,5 @@ Tests/StateTest.php
    :linenos:
 
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/State
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Behavioral/State
 .. __: http://en.wikipedia.org/wiki/State_pattern

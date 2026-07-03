@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\ServiceLocator\Tests;
 
 use DesignPatterns\More\ServiceLocator\LogService;
@@ -8,12 +10,9 @@ use PHPUnit\Framework\TestCase;
 
 class ServiceLocatorTest extends TestCase
 {
-    /**
-     * @var ServiceLocator
-     */
-    private $serviceLocator;
+    private ServiceLocator $serviceLocator;
 
-    public function setUp()
+    public function setUp(): void
     {
         $this->serviceLocator = new ServiceLocator();
     }

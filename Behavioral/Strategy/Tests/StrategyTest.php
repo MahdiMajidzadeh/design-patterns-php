@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Strategy\Tests;
 
 use DesignPatterns\Behavioral\Strategy\Context;

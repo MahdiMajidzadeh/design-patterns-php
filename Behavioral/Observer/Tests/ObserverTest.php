@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Observer\Tests;
 
 use DesignPatterns\Behavioral\Observer\User;

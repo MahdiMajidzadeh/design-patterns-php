@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Memento\Tests;
 
 use DesignPatterns\Behavioral\Memento\State;

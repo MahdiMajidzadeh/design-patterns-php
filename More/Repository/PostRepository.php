@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\Repository;
 
+use OutOfBoundsException;
 use DesignPatterns\More\Repository\Domain\Post;
 use DesignPatterns\More\Repository\Domain\PostId;
 
@@ -16,14 +19,8 @@ use DesignPatterns\More\Repository\Domain\PostId;
  */
 class PostRepository
 {
-    /**
-     * @var Persistence
-     */
-    private $persistence;
-
-    public function __construct(Persistence $persistence)
+    public function __construct(private Persistence $persistence)
     {
-        $this->persistence = $persistence;
     }
 
     public function generateId(): PostId
@@ -35,8 +32,8 @@ class PostRepository
     {
         try {
             $arrayData = $this->persistence->retrieve($id->toInt());
-        } catch (\OutOfBoundsException $e) {
-            throw new \OutOfBoundsException(sprintf('Post with id %d does not exist', $id->toInt()), 0, $e);
+        } catch (OutOfBoundsException $e) {
+            throw new OutOfBoundsException(sprintf('Post with id %d does not exist', $id->toInt()), 0, $e);
         }
 
         return Post::fromState($arrayData);

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\Bridge\Tests;
 
 use DesignPatterns\Structural\Bridge\HelloWorldService;

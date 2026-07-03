@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Behavioral\Iterator\Tests;
 
 use DesignPatterns\Behavioral\Iterator\Book;

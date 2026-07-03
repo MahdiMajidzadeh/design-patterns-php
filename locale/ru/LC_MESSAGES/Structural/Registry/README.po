@@ -30,32 +30,16 @@ msgstr ""
 "Для реализации централизованного хранения объектов, часто используемых "
 "во всем приложении, как правило, реализуется с помощью абстрактного "
 "класса только c статическими методами (или с помощью шаблона Singleton). "
-"Помнте что это вводит глобальное состояние, которого следует избегать. "
+"Помните, что это вводит глобальное состояние, которого следует избегать. "
 "Используйте Dependency Injection вместо Registry."
 
 #: ../../Structural/Registry/README.rst:12
 msgid "Examples"
 msgstr "Примеры"
 
-#: ../../Structural/Registry/README.rst:14
-msgid ""
-"Zend Framework 1: ``Zend_Registry`` holds the application's logger "
-"object, front controller etc."
-msgstr ""
-"Zend Framework 1: ``Zend_Registry`` содержит объект журналирования "
-"приложения (логгер), фронт-контроллер и т.д."
-
-#: ../../Structural/Registry/README.rst:16
-msgid ""
-"Yii Framework: ``CWebApplication`` holds all the application components, "
-"such as ``CWebUser``, ``CUrlManager``, etc."
-msgstr ""
-"Yii Framework: ``CWebApplication`` содержит все компоненты приложения, "
-"такие как ``CWebUser``, ``CUrlManager``, и т.д."
-
 #: ../../Structural/Registry/README.rst:20
 msgid "UML Diagram"
-msgstr "UML Диаграмма"
+msgstr "Диаграмма UML"
 
 #: ../../Structural/Registry/README.rst:27
 msgid "Code"

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\DependencyInjection\Tests;
 
 use DesignPatterns\Structural\DependencyInjection\DatabaseConfiguration;
@@ -10,9 +12,9 @@ class DependencyInjectionTest extends TestCase
 {
     public function testDependencyInjection()
     {
-        $config = new DatabaseConfiguration('localhost', 3306, 'domnikl', '1234');
+        $config = new DatabaseConfiguration('localhost', 3306, 'user', '1234');
         $connection = new DatabaseConnection($config);
 
-        $this->assertSame('domnikl:1234@localhost:3306', $connection->getDsn());
+        $this->assertSame('user:1234@localhost:3306', $connection->getDsn());
     }
 }

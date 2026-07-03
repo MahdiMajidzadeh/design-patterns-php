@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\Proxy;
 
 class HeavyBankAccount implements BankAccount
@@ -7,7 +9,7 @@ class HeavyBankAccount implements BankAccount
     /**
      * @var int[]
      */
-    private $transactions = [];
+    private array $transactions = [];
 
     public function deposit(int $amount)
     {

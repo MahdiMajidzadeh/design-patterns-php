@@ -9,10 +9,6 @@ checked against. The composite specification class has one method called
 ``isSatisfiedBy`` that returns either true or false depending on whether
 the given object satisfies the specification.
 
-Examples
---------
-
--  `RulerZ <https://github.com/K-Phoen/rulerz>`__ 
 
 UML Diagram
 -----------
@@ -32,9 +28,9 @@ Item.php
    :language: php
    :linenos:
 
-SpecificationInterface.php
+Specification.php
 
-.. literalinclude:: SpecificationInterface.php
+.. literalinclude:: Specification.php
    :language: php
    :linenos:
 
@@ -71,5 +67,5 @@ Tests/SpecificationTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Behavioral/Specification
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Behavioral/Specification
 .. __: http://en.wikipedia.org/wiki/Specification_pattern

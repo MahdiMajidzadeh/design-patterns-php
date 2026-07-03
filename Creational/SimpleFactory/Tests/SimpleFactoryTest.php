@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\SimpleFactory\Tests;
 
 use DesignPatterns\Creational\SimpleFactory\Bicycle;

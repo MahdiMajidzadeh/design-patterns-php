@@ -7,7 +7,7 @@ Purpose
 To create series of related or dependent objects without specifying
 their concrete classes. Usually the created classes all implement the
 same interface. The client of the abstract factory does not care about
-how these objects are created, he just knows how they go together.
+how these objects are created, it just knows how they go together.
 
 UML Diagram
 -----------
@@ -21,27 +21,57 @@ Code
 
 You can also find this code on `GitHub`_
 
-Parser.php
+WriterFactory.php
 
-.. literalinclude:: Parser.php
+.. literalinclude:: WriterFactory.php
    :language: php
    :linenos:
 
-CsvParser.php
+CsvWriter.php
 
-.. literalinclude:: CsvParser.php
+.. literalinclude:: CsvWriter.php
    :language: php
    :linenos:
 
-JsonParser.php
+JsonWriter.php
 
-.. literalinclude:: JsonParser.php
+.. literalinclude:: JsonWriter.php
    :language: php
    :linenos:
 
-ParserFactory.php
+UnixCsvWriter.php
 
-.. literalinclude:: ParserFactory.php
+.. literalinclude:: UnixCsvWriter.php
+   :language: php
+   :linenos:
+
+UnixJsonWriter.php
+
+.. literalinclude:: UnixJsonWriter.php
+   :language: php
+   :linenos:
+
+UnixWriterFactory.php
+
+.. literalinclude:: UnixWriterFactory.php
+   :language: php
+   :linenos:
+
+WinCsvWriter.php
+
+.. literalinclude:: WinCsvWriter.php
+   :language: php
+   :linenos:
+
+WinJsonWriter.php
+
+.. literalinclude:: WinJsonWriter.php
+   :language: php
+   :linenos:
+
+WinWriterFactory.php
+
+.. literalinclude:: WinWriterFactory.php
    :language: php
    :linenos:
 
@@ -54,5 +84,5 @@ Tests/AbstractFactoryTest.php
    :language: php
    :linenos:
 
-.. _`GitHub`: https://github.com/domnikl/DesignPatternsPHP/tree/master/Creational/AbstractFactory
+.. _`GitHub`: https://github.com/DesignPatternsPHP/DesignPatternsPHP/tree/main/Creational/AbstractFactory
 .. __: http://en.wikipedia.org/wiki/Abstract_factory_pattern

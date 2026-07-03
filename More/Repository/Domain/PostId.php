@@ -1,6 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\More\Repository\Domain;
+
+use InvalidArgumentException;
 
 /**
  * This is a perfect example of a value object that is identifiable by it's value alone and
@@ -11,21 +15,15 @@ namespace DesignPatterns\More\Repository\Domain;
  */
 class PostId
 {
-    /**
-     * @var int
-     */
-    private $id;
-
-    public static function fromInt(int $id)
+    public static function fromInt(int $id): PostId
     {
         self::ensureIsValid($id);
 
         return new self($id);
     }
 
-    private function __construct(int $id)
+    private function __construct(private int $id)
     {
-        $this->id = $id;
     }
 
     public function toInt(): int
@@ -36,7 +34,7 @@ class PostId
     private static function ensureIsValid(int $id)
     {
         if ($id <= 0) {
-            throw new \InvalidArgumentException('Invalid PostId given');
+            throw new InvalidArgumentException('Invalid PostId given');
         }
     }
 }

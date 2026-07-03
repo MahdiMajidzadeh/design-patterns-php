@@ -55,19 +55,11 @@ msgstr "Примеры"
 
 #: ../../Behavioral/Command/README.rst:23
 msgid ""
-"A text editor : all events are Command which can be undone, stacked and "
+"A text editor : all events are commands which can be undone, stacked and "
 "saved."
 msgstr ""
 "текстовый редактор: все события являются Командами, которые могут быть "
 "отменены, выстроены в определённую последовательность и сохранены."
-
-#: ../../Behavioral/Command/README.rst:25
-msgid ""
-"Symfony2: SF2 Commands that can be run from the CLI are built with just the "
-"Command pattern in mind"
-msgstr ""
-"Symfony2: SF2 Commands, это команды, которые построены согласно данному "
-"паттерну и могут выполняться из командной строки."
 
 #: ../../Behavioral/Command/README.rst:27
 msgid ""
@@ -81,7 +73,7 @@ msgstr ""
 
 #: ../../Behavioral/Command/README.rst:32
 msgid "UML Diagram"
-msgstr "UML Диаграмма"
+msgstr "Диаграмма UML"
 
 #: ../../Behavioral/Command/README.rst:39
 msgid "Code"

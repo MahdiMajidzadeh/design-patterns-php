@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Structural\Proxy\Tests;
 
 use DesignPatterns\Structural\Proxy\BankAccountProxy;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace DesignPatterns\Creational\Singleton\Tests;
 
 use DesignPatterns\Creational\Singleton\Singleton;
